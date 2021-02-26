@@ -4,6 +4,9 @@
 restarted or rebuilt.  This makes connecting with a database tool like TablePlus a pain
 since the connection port needs to be changed every time the application is restarted.
 
+If you prefer to use the mysql shell, this plugin is not for you as Lando comes with a
+connection command out of the box.
+
 This plugin uses the connection information from lando to open the connection
 in the tool of your choice.  It essentially runs `open mysql://user:password@127.0.0.1:port/database`.
 Currently, the plugin supports mysql and postgres.
