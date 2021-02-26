@@ -1,0 +1,13 @@
+{
+  "name": "lando-db-connect",
+  "version": "1.0.0",
+  "description": "A plugin to open Lando's database connection.",
+  "main": "index.js",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "license": "MIT"
+}
