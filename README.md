@@ -23,8 +23,9 @@ Currently, the plugin supports mysql and postgres.
 
 * In a lando application
 * `lando db-connect`
-* `lando db-connect -s [service_name]` where service name is the service with a database
-connection to open.
+* `lando db-connect -s [service_name]`
+  * Where `[service_name]` is the service with a databaseconnection to open.
+  * The default service_name is `database`.
 
 
 # Notes
