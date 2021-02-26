@@ -14,12 +14,12 @@ Currently, the plugin supports mysql and postgres.
 
 # Usage
 
-## Clone this plugin into your `~/.lando/plugins` directory.
+**Clone this plugin into your `~/.lando/plugins` directory.**
 
 * `cd ~/.lando/plugins`
 * `git clone git@github.com:jesseday/lando-db-connect.git db-connect`
 
-## Run in your lando applications
+**Run in your lando applications**
 
 * In a lando application
 * `lando db-connect`
