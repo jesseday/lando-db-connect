@@ -23,7 +23,7 @@ Currently, the plugin supports mysql and postgres.
 
 * In a lando application
 * `lando db-connect`
-* lando db-connect -s [service_name]` where service name is the service with a database
+* `lando db-connect -s [service_name]` where service name is the service with a database
 connection to open.
 
 
