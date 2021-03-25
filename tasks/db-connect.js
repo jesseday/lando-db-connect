@@ -38,14 +38,25 @@ module.exports = (lando) => {
             throw new Error(`Could not find the service ${options.service}`);
           }
 
-          const {
+          let {
             creds: { user, password, database },
             external_connection: { host, port },
           } = service;
+          let type = false;
           if (_.includes(["mariadb", "mysql"], service.type)) {
-            const type = "mysql";
+            type = "mysql";
           } else if (service.type === "postgres") {
-            const type = "postgres";
+            type = "postgres";
+          } else if (service.type === "platformsh-mariadb") {
+            type = "mysql";
+            let { user, path } = service.creds[0];
+            database = path;
+            password = "";
+          }
+          if (!type) {
+            throw new Error(
+              `Database type not yet supported by this plugin.  Could not open a connection.`
+            );
           }
 
           exec(
